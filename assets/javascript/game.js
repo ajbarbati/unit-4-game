@@ -1,5 +1,14 @@
 // You will be given a random number at the start of the game.
 
+function crystalGame() {
+    var min = 19
+    var max = 120
+    var randomNumber = Math.floor(Math.random() * (+max - +min)) + +min;
+    console.log(randomNumber);
+    $("#number").html("<h3>" + randomNumber + "</h3 ")  
+}
+
+
 // There are four crystals below. By clicking on a crystal you will add a 
 // specific amount of points to your total score
 
