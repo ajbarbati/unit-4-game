@@ -18,9 +18,9 @@ function crystalGame() {
 
         var crystalValue = Math.floor(Math.random() * ((max - min) + min));
 
-        console.log(crystalValue)
+        console.log(crystalValue);
 
-        crystalValue + totalNumber
+        crystalValue + totalNumber;
 })
 $("#yellowCrystal").click(function() {
         var min = 1;
@@ -28,9 +28,9 @@ $("#yellowCrystal").click(function() {
 
         var crystalValue = Math.floor(Math.random() * ((max - min) + min));
 
-        console.log(crystalValue)
+        console.log(crystalValue);
 
-        crystalValue + totalNumber
+        crystalValue + totalNumber;
 })
 $("#purpleCrystal").click(function() {
         var min = 1;
@@ -38,9 +38,9 @@ $("#purpleCrystal").click(function() {
 
         var crystalValue = Math.floor(Math.random() * ((max - min) + min));
 
-        console.log(crystalValue)
+        console.log(crystalValue);
 
-        crystalValue + totalNumber
+        crystalValue + totalNumber;
 })
 $("#greenCrystal").click(function() {
         var min = 1;
@@ -48,26 +48,27 @@ $("#greenCrystal").click(function() {
 
         var crystalValue = Math.floor(Math.random() * ((max - min) + min));
 
-        console.log(crystalValue)
+        console.log(crystalValue);
 
-        crystalValue + totalNumber
+        crystalValue + totalNumber;
 })
 
 
 // There are four crystals below. By clicking on a crystal you will add a 
 // specific amount of points to your total score
-var totalNumber = 0
-var wins = 0
+var totalNumber = 0;
+var wins = 0;
+var losses = 0;
 
 // You will win the game by matching your total score to the random number,
 if (totalNumber === randomNumber) {
-    wins++
+    wins++;
     console.log("You Win!");
 }
 // you lose the game if your total score goes above the random number
 if (totalNumber > randomNumber) {
-    loses++
-    console.log("you lose")
+    loses++;
+    console.log("you lose");
 }
 // The value of each crystal is hidden from you until you click on it
 
