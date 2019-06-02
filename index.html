@@ -11,38 +11,40 @@
     <title>Crystals Collector</title>
 </head>
 <body>
-    <h1>Crystal Collector</h1>
 
-    <p>
-        You will be given a random number at the start of the game.
-        There are four crystals below. By clicking on a crystal you will add a 
-        specific amount of points to your total score. 
-        You will win the game by matching your total score to the random number,
-        you lose the game if your total score goes above the random number. 
-        The value of each crystal is hidden from you until you click on it. 
-        Each time when the game starts, the game wull change the values of each crystal.
-    </p>
+    <header>
+        <h1>Crystal Collector</h1>
+    </header>
 
-    <div id="number">Number</div>
-
-    <div id="winLoss"></div>
-
+    <main>
+        <p>
+            You will be given a random number at the start of the game.
+            There are four crystals below. By clicking on a crystal you will add a 
+            specific amount of points to your total score. 
+            You will win the game by matching your total score to the random number,
+            you lose the game if your total score goes above the random number. 
+            The value of each crystal is hidden from you until you click on it. 
+            Each time when the game starts, the game wull change the values of each crystal.
+        </p>
+    </main>
     
-
-
-    <h3>Your total score is:</h3>
-
-    <div id="images">
-        <img id="blueCrystal" src="assets/images/gem-b.png" alt="hi">
-        <img id="yellowCrystal" src="assets/images/gem-y.png" alt="hi">
-        <img id="purpleCrystal" src="assets/images/gem-p.png" alt="hi">
-        <img id="greenCrystal" src="assets/images/gem-g.png" alt="hey">
-    </div>
-
-    <div id="dwarf">
-        <img id="doc" src="assets/images/doc.png" alt="yo">
-    </div>
-
-    <div id="totalscore"></div>
+    <aside>
+        <div id="number">Number: </div>
+        <div id="winLoss">Win / Losses: </div>
+        <div id="totalscore"><h3>Your total score is: </h3></div>
+    </aside>
+    
+    <footer>
+        <div id="images">
+            <img id="blueCrystal" src="assets/images/gem-b.png" alt="hi">
+            <img id="yellowCrystal" src="assets/images/gem-y.png" alt="hi">
+            <img id="purpleCrystal" src="assets/images/gem-p.png" alt="hi">
+            <img id="greenCrystal" src="assets/images/gem-g.png" alt="hey">
+        </div>
+        <div id="dwarf">
+            <img id="doc" src="assets/images/doc.png" alt="yo">
+        </div>
+    </footer>
+    
 </body>
 </html>
