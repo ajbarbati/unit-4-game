@@ -35,7 +35,7 @@ $("#yellowCrystal").click(function() {
 $("#purpleCrystal").click(function() {
         var min = 1;
         var max = 12;
-
+ 
         var crystalValue = Math.floor(Math.random() * ((max - min) + min));
 
         console.log(crystalValue);
