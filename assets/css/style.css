@@ -46,12 +46,19 @@ p {
     border: 4px solid rgb(27, 20, 20);
 }
 
+#crystals {
+    border-radius: 8px;
+    border: 4px solid rgb(27, 20, 20);
+    background-color: #4b2e27;
+    padding: 10px;
+}
+
 img {
     width: 150px;
     height: auto;
 }
 
 #doc {
-    height: 410px;
+    height: 350px;
     width: auto;
 }
