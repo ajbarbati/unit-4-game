@@ -1,6 +1,6 @@
 // You will be given a random number at the start of the game.
 
-function crystalGame() {
+$(document).ready(function crystalGame() {)
     var min = 19;
     var max = 120;
     var randomNumber = Math.floor(Math.random() * ((max - min + 1) + min));
