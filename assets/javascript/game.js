@@ -39,10 +39,10 @@ $(document).ready(function crystalGame() {
         }
         
         function newValues () {
-                blueValue = Math.floor(Math.random() * ((12 - 1 + 1) + 1))
-                yellowValue = Math.floor(Math.random() * ((12 - 1 + 1) + 1))
-                purpleValue = Math.floor(Math.random() * ((12 - 1 + 1) + 1))
-                greenValue = Math.floor(Math.random() * ((12 - 1 + 1) + 1))         
+                blueValue = Math.ceil(Math.random() * 12)
+                yellowValue = Math.ceil(Math.random() * 12)
+                purpleValue = Math.ceil(Math.random() * 12)
+                greenValue = Math.ceil(Math.random() * 12)         
         }
 
         $("#blueCrystal").click( function () {
