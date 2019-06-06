@@ -21,8 +21,9 @@ header,
 
 h1, 
   #number, 
-  #winLoss, 
-  h3 {
+  #wins,
+  #losses, 
+  #totalscore {
     background-color: #4b2e27;
     color: #ffffff;
     width: 300px;
