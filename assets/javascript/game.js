@@ -1,7 +1,8 @@
 // You will be given a random number at the start of the game.
 
 $(document).ready(function crystalGame() {
-        var randomNumber = Math.floor(Math.random() * ((120 - 19 + 1) + 19));
+        newGame()
+        var randomNumber
         console.log(randomNumber);
     
         $("#number").text("Number: " + randomNumber)
@@ -11,6 +12,10 @@ $(document).ready(function crystalGame() {
         var totalNumber = 0
         var wins = 0
         var losses = 0
+        var blueValue 
+        var yellowValue
+        var purpleValue
+        var greenValue
 
         function winLoss () {
                 if (totalNumber === randomNumber) {
@@ -26,41 +31,41 @@ $(document).ready(function crystalGame() {
         }
 
         function newGame () {
-                randomNumber =Math.floor(Math.random() * ((120 - 19 + 1) + 19))
+                randomNumber = Math.floor(Math.random() * ((120 - 19 + 1) + 19)) 
                 $("#number").text("Number: " + randomNumber)
                 totalNumber = 0
                 $("#totalscore").text("Your total score is: " + totalNumber)
+                newValues()
+        }
+        
+        function newValues () {
+                blueValue = Math.floor(Math.random() * ((12 - 1 + 1) + 1))
+                yellowValue = Math.floor(Math.random() * ((12 - 1 + 1) + 1))
+                purpleValue = Math.floor(Math.random() * ((12 - 1 + 1) + 1))
+                greenValue = Math.floor(Math.random() * ((12 - 1 + 1) + 1))         
         }
 
         $("#blueCrystal").click( function () {
-             var crystalValue = Math.floor(Math.random() * ((12 - 1) + 1))
-              
-             totalNumber = crystalValue + totalNumber 
-             console.log(totalNumber)
+             totalNumber = blueValue + totalNumber 
+             console.log(blueValue)
              $("#totalscore").text("Your total score is: " + totalNumber)
              winLoss()
         })
         $("#yellowCrystal").click( function () {
-             var crystalValue = Math.floor(Math.random() * ((12 - 1) + 1))
-              
-             totalNumber = crystalValue + totalNumber 
-             console.log(totalNumber)
+             totalNumber = yellowValue + totalNumber 
+             console.log(yellowValue)
              $("#totalscore").text("Your total score is: " + totalNumber)
              winLoss()
         })
         $("#purpleCrystal").click( function () {
-             var crystalValue = Math.floor(Math.random() * ((12 - 1) + 1))
-              
-             totalNumber = crystalValue + totalNumber 
-             console.log(totalNumber)
+             totalNumber = purpleValue + totalNumber 
+             console.log(purpleValue)
              $("#totalscore").text("Your total score is: " + totalNumber)
              winLoss()
         })
         $("#greenCrystal").click( function () {
-             var crystalValue = Math.floor(Math.random() * ((12 - 1) + 1))
-              
-             totalNumber = crystalValue + totalNumber 
-             console.log(totalNumber)
+             totalNumber = greenValue + totalNumber 
+             console.log(greenValue)
              $("#totalscore").text("Your total score is: " + totalNumber)
              winLoss()
         })
